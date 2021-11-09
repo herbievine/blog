@@ -3,7 +3,11 @@ import React from 'react'
 import { usePostsQuery } from '../generated/graphql'
 
 const Home: NextPage = () => {
-  const { data } = usePostsQuery()
+  const { data, error } = usePostsQuery()
+
+  if (error) {
+    throw new Error(error.message)
+  }
 
   return (
     <div>
