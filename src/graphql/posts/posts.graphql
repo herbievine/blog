@@ -1,0 +1,14 @@
+query Posts {
+  posts {
+    id
+    title
+    description
+    slug
+    relativeImage
+    rawMdx
+    published
+    views
+    likes
+    updatedAt
+  }
+}
