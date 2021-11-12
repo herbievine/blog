@@ -2,7 +2,7 @@
   "name": "blog",
   "private": true,
   "scripts": {
-    "serve": "next dev -p 4000",
+    "dev": "next dev -p 4000",
     "build": "next build",
     "start": "next start",
     "lint": "eslint \"src/**/*.{ts,tsx,js,jsx}\" --fix",
